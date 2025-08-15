@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ignacio Frugoni Zavala – Portfolio</title>
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar">
+    <div class="container nav-wrapper">
+      <div class="logo">Ignacio&nbsp;Frugoni&nbsp;Zavala</div>
+      <ul class="nav-links">
+        <li><a href="#about">Profile</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="lang-switch"><a href="index.html" title="Ver en Español">ES</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <h1>Ignacio&nbsp;Frugoni&nbsp;Zavala</h1>
+      <p class="subtitle">Full&nbsp;Stack&nbsp;Developer · Data&nbsp;Scientist · AI&nbsp;Engineer</p>
+      <a href="#about" class="cta-button">Discover more</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- About section -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>Profile</h2>
+        <div class="about-grid">
+          <div class="about-photo">
+            <img src="assets/yo.jpg" alt="Photo of Ignacio Frugoni Zavala">
+          </div>
+          <div class="about-info">
+            <p>
+              I am a software developer with experience in artificial intelligence and data science. My roles have ranged from developing desktop applications to data analysis and microcontroller programming. I am known for my creativity and my ability to think outside the box when solving complex problems. I also possess strong organisational, planning and communication skills developed while working in diverse teams.
+            </p>
+            <p>
+              I adapt quickly to new environments and tasks. I am currently studying Artificial Intelligence Engineering at the National University of the Littoral (UNL‑FICH) and expanding my knowledge through an MLOps bootcamp on Udemy. In addition to my technical interests, I enjoy teaching and learning from others.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IT Experience -->
+    <section id="experience" class="section experience">
+      <div class="container">
+        <h2>IT Experience</h2>
+        <div class="card-grid">
+          <!-- SkillMatrix -->
+          <div class="exp-card" title="React, Node.js, TypeScript, Nest.js, Next.js, SQL">
+            <div class="card-header">
+              <h3>SkillMatrix – Folder&nbsp;IT</h3>
+              <span class="tag">Full‑Stack Developer</span>
+            </div>
+            <p class="card-summary">Migration of the backend and frontend of a skills and technologies application for employers.</p>
+<button class="toggle-btn" data-show-text="Details" data-hide-text="Hide">Details</button>
+            <div class="card-details">
+              <p><strong>Description:</strong> SkillMatrix is a RESTful API that allows companies to know the technologies and skills of their collaborators and candidates. As a developer I participated in migrating the backend to a new architecture, updating the database and adapting the frontend.</p>
+              <p><strong>Technologies:</strong> React, Node.js, TypeScript, Nest.js, Next.js, Postgres, MySQL and Postman.</p>
+              <p><strong>Team:</strong> Project Manager, three developers and a QA Engineer.</p>
+            </div>
+          </div>
+          <!-- Tunnel Subfluvial -->
+          <div class="exp-card" title="Java, Spring Boot, Angular, Electron, SQL Server">
+            <div class="card-header">
+              <h3>Subfluvial Tunnel Santa Fe–Paraná</h3>
+              <span class="tag">Full‑Stack Developer</span>
+            </div>
+            <p class="card-summary">Full‑stack development of an ERP system for comprehensive tunnel management.</p>
+            <button class="toggle-btn">Details</button>
+            <div class="card-details">
+              <p><strong>Description:</strong> I took part in developing an ERP system covering budget management, inventories, accounting and personnel management, including vacations and trips. I performed requirements analysis, conducted user interviews, designed use cases and data structures and coded both the backend and frontend.</p>
+              <p><strong>Technologies:</strong> Java (Spring, Spring Boot, Hibernate), Angular, Angular Material, Electron, Python (Flask), REST API, SQL&nbsp;Server.</p>
+              <p><strong>Team:</strong> Project Manager, two technical leaders, four full‑stack developers, three frontend developers, three backend developers and two QA Engineers.</p>
+            </div>
+          </div>
+          <!-- Signal processing -->
+          <div class="exp-card" title="Python, DSP, NumPy">
+            <div class="card-header">
+              <h3>Signal processing</h3>
+              <span class="tag">DSP Project</span>
+            </div>
+            <p class="card-summary">Design of interpolation, sampling and filtering algorithms for sensor data.</p>
+            <button class="toggle-btn">Details</button>
+            <div class="card-details">
+              <p><strong>Description:</strong> I developed algorithms in Python to process signals (sound, light, vibration) including interpolation, sampling, filtering and code optimisation using NumPy.</p>
+              <p><strong>Technologies:</strong> Python, mathematics and physics.</p>
+              <p><strong>Team:</strong> Product Owner and three developers.</p>
+            </div>
+          </div>
+          <!-- INER Data Scientist -->
+          <div class="exp-card" title="Python, Pandas, NumPy, Matplotlib">
+            <div class="card-header">
+              <h3>Data analyst – INER</h3>
+              <span class="tag">Data Scientist</span>
+            </div>
+            <p class="card-summary">Analysis of the national tuberculosis database to detect trends and correlations.</p>
+            <button class="toggle-btn">Details</button>
+            <div class="card-details">
+              <p><strong>Description:</strong> I worked with the national tuberculosis dataset reported in Argentina (1995–2023) to normalise data, convert spreadsheets into DataFrames, apply statistical methods, compute indices and generate graphs with Matplotlib.</p>
+              <p><strong>Technologies:</strong> Python, Pandas, NumPy, Matplotlib.</p>
+              <p><strong>Team:</strong> A director and three developers.</p>
+            </div>
+          </div>
+          <!-- Salary settlement software -->
+          <div class="exp-card" title="Java, MySQL, PDF">
+            <div class="card-header">
+              <h3>Payroll settlement software</h3>
+              <span class="tag">Desktop Developer</span>
+            </div>
+            <p class="card-summary">Desktop application for payroll calculation with receipt generation and email sending.</p>
+            <button class="toggle-btn">Details</button>
+            <div class="card-details">
+              <p><strong>Description:</strong> I designed and developed software that calculates salaries based on worked hours and variables such as seniority and punctuality. The system includes a login module, database connection and PDF receipt generation for emailing.</p>
+              <p><strong>Technologies:</strong> Java, MySQL, XAMPP.</p>
+              <p><strong>Team:</strong> Project Manager, a frontend developer, a backend developer and a QA Engineer.</p>
+            </div>
+          </div>
+          <!-- Tecnomate -->
+          <div class="exp-card" title="Python, Java, C++">
+            <div class="card-header">
+              <h3>Algorithm design – Tecnomate</h3>
+              <span class="tag">Competition</span>
+            </div>
+            <p class="card-summary">Solving complex computational problems as a team.</p>
+            <button class="toggle-btn">Details</button>
+            <div class="card-details">
+              <p><strong>Description:</strong> I participated in an advanced algorithm design project solving technical problems under time and memory constraints. The initiative emphasised critical analysis, optimisation and team collaboration.</p>
+              <p><strong>Technologies:</strong> Python, Java, C++.</p>
+              <p><strong>Team:</strong> Two developers and a QA Engineer.</p>
+            </div>
+          </div>
+          <!-- IoT home automation -->
+          <div class="exp-card" title="Arduino, IoT, ESP32">
+            <div class="card-header">
+              <h3>Home automation (IoT)</h3>
+              <span class="tag">IoT Project</span>
+            </div>
+            <p class="card-summary">Design of circuits and remote control of lights, doors and windows.</p>
+            <button class="toggle-btn">Details</button>
+            <div class="card-details">
+              <p><strong>Description:</strong> We automated lighting and control of doors and windows via a smartphone, designing the electrical circuit, programming the microcontroller and integrating with the Arduino IoT Cloud.</p>
+              <p><strong>Technologies:</strong> Arduino&nbsp;IDE, Arduino&nbsp;Cloud, Arduino IoT&nbsp;API.</p>
+              <p><strong>Team:</strong> Software developer, electronics engineer and QA Engineer.</p>
+            </div>
+          </div>
+          <!-- Drone control -->
+          <div class="exp-card" title="Arduino, Sensors, ESP32">
+            <div class="card-header">
+              <h3>Gesture‑controlled drone</h3>
+              <span class="tag">Robotics</span>
+            </div>
+            <p class="card-summary">Development of a drone controlled through hand gestures.</p>
+            <button class="toggle-btn">Details</button>
+            <div class="card-details">
+              <p><strong>Description:</strong> I conceived and built a drone operated through gestures using MEMs sensors (MPU‑6050) and an ESP32 microcontroller. I designed the circuit, the data processing algorithms and carried out testing and adjustments.</p>
+              <p><strong>Technologies:</strong> Arduino&nbsp;IDE, electronics, mathematics and physics.</p>
+              <p><strong>Team:</strong> Software developer and electronics engineer.</p>
+            </div>
+          </div>
+          <!-- Galaga game -->
+          <div class="exp-card" title="C++, SFML, Game Development">
+            <div class="card-header">
+              <h3>Galaga‑style game developer</h3>
+              <span class="tag">Arcade Game</span>
+            </div>
+            <p class="card-summary">Development of an arcade‑style game in C++ using SFML.</p>
+            <button class="toggle-btn">Details</button>
+            <div class="card-details">
+              <p><strong>Description:</strong> I implemented all game mechanics (player movement, enemy waves, shooting and collision detection) and integrated sound effects and animations. I applied object‑oriented programming principles and collaborated on performance testing.</p>
+              <p><strong>Technologies:</strong> C++, SFML, Zinjai.</p>
+              <p><strong>Team:</strong> Three developers (interface and game mechanics) and a QA Engineer.</p>
+            </div>
+          </div>
+          <!-- AI & Prompt Engineer -->
+          <div class="exp-card" title="AI, Prompt Engineering, LaTeX">
+            <div class="card-header">
+              <h3>AI &amp; Prompt Engineer</h3>
+              <span class="tag">Outlier</span>
+            </div>
+            <p class="card-summary">Correction of language model answers and LaTeX writing.</p>
+            <button class="toggle-btn">Details</button>
+            <div class="card-details">
+              <p><strong>Description:</strong> I verified and corrected responses generated by language models, solved math and physics problems as needed and rewrote them using LaTeX.</p>
+              <p><strong>Technologies:</strong> Python, LaTeX, mathematics.</p>
+              <p><strong>Team:</strong> Prompt reader, prompt solver and LaTeX writer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional experience -->
+    <section id="additional" class="section additional">
+      <div class="container">
+        <h2>Additional Experience</h2>
+        <div class="card-grid">
+          <!-- Customer service -->
+          <div class="exp-card">
+            <div class="card-header">
+              <h3>Customer service</h3>
+              <span class="tag">2024‑2025</span>
+            </div>
+            <p class="card-summary">Customer service, cash handling and order preparation at Aloja Boulevard 2690.</p>
+            <button class="toggle-btn">Details</button>
+            <div class="card-details">
+              <p>I handled customer service, order preparation and shelf restocking. This experience strengthened my service and communication skills.</p>
+            </div>
+          </div>
+          <!-- Freelance IT technician -->
+          <div class="exp-card">
+            <div class="card-header">
+              <h3>Freelance IT technician</h3>
+              <span class="tag">2019 – present</span>
+            </div>
+            <p class="card-summary">Diagnosis and repair of computer systems and network maintenance.</p>
+            <button class="toggle-btn">Details</button>
+            <div class="card-details">
+              <p>Since 2019 I have provided PC and device repair services, installed software and operating systems and implemented networks. I also teach private lessons in mathematics, physics and programming.</p>
+            </div>
+          </div>
+          <!-- Data analyst (eventual) -->
+          <div class="exp-card">
+            <div class="card-header">
+              <h3>Data analyst (occasional)</h3>
+              <span class="tag">INER</span>
+            </div>
+            <p class="card-summary">Occasional work for the National Institute of Respiratory Diseases.</p>
+            <button class="toggle-btn">Details</button>
+            <div class="card-details">
+              <p>I collaborated with INER as a data analyst, applying my data science and statistics skills.</p>
+            </div>
+          </div>
+          <!-- Other roles -->
+          <div class="exp-card">
+            <div class="card-header">
+              <h3>Other roles</h3>
+              <span class="tag">Various</span>
+            </div>
+            <p class="card-summary">Uber (driver) and Rappi (rider).</p>
+            <button class="toggle-btn">Details</button>
+            <div class="card-details">
+              <p>I have worked as an Uber driver and Rappi rider, which taught me to manage my time and interact with a variety of people.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Interactive projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <h3>Game of Life</h3>
+            <p>Explore the evolution of cells in Conway's famous simulation. You can start, stop, clear and generate random patterns.</p>
+            <div id="gameOfLife" class="gol-container"></div>
+            <div class="gol-controls">
+              <button id="startBtn">Start</button>
+              <button id="pauseBtn">Pause</button>
+              <button id="randomBtn">Random</button>
+              <button id="clearBtn">Clear</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education section -->
+    <section id="education" class="section education">
+      <div class="container">
+        <h2>Education &amp; Training</h2>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-title">UNL‑FICH – Artificial Intelligence Engineering</div>
+            <div class="timeline-date">2023 – Present</div>
+            <div class="timeline-content">Currently studying artificial intelligence engineering.</div>
+          </li>
+          <li>
+            <div class="timeline-title">EET No.&nbsp;480 Manuel Belgrano – Computer Science Technician</div>
+            <div class="timeline-date">2017 – 2022</div>
+            <div class="timeline-content">Graduated with honours, with knowledge of networks, electricity, electronics and programming.</div>
+          </li>
+          <li>
+            <div class="timeline-title">Programming fundamentals</div>
+            <div class="timeline-date">2019</div>
+            <div class="timeline-content">Programming 1 and 2 courses where I learned C++ and Python.</div>
+          </li>
+          <li>
+            <div class="timeline-title">Argentina Programa</div>
+            <div class="timeline-date">2019</div>
+            <div class="timeline-content">Introduction to web development (HTML, JavaScript and CSS).</div>
+          </li>
+          <li>
+            <div class="timeline-title">Microcontroller course</div>
+            <div class="timeline-date">2019</div>
+            <div class="timeline-content">Learned the basics of programming Arduino boards using C and the Arduino IDE.</div>
+          </li>
+          <li>
+            <div class="timeline-title">Java course</div>
+            <div class="timeline-date">2017</div>
+            <div class="timeline-content">Fundamentals of object‑oriented programming in Java.</div>
+          </li>
+          <li>
+            <div class="timeline-title">RAG course – DeepLearning.ai</div>
+            <div class="timeline-date">2025</div>
+            <div class="timeline-content">Training in Retrieval‑Augmented Generation techniques for language models.</div>
+          </li>
+          <li>
+            <div class="timeline-title">MLOps bootcamp (Udemy)</div>
+            <div class="timeline-date">2025 – In progress</div>
+            <div class="timeline-content">Practical training in Machine Learning Operations: model versioning, deployment with Docker and Kubernetes, MLflow and monitoring.</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2>Skills &amp; Knowledge</h2>
+        <div class="skills-grid">
+          <div class="skill-column">
+            <h3>Programming languages</h3>
+            <ul>
+              <li>Python</li>
+              <li>Java</li>
+              <li>JavaScript / TypeScript</li>
+              <li>C++</li>
+            </ul>
+          </div>
+          <div class="skill-column">
+            <h3>Frameworks &amp; Libraries</h3>
+            <ul>
+              <li>React, Next.js, Nest.js, Node.js</li>
+              <li>Angular, Angular&nbsp;Material, Electron</li>
+              <li>Spring Boot, Hibernate</li>
+              <li>Flask, Flask&nbsp;RestPlus</li>
+              <li>Pandas, NumPy, Matplotlib, Pygame, SFML</li>
+            </ul>
+          </div>
+          <div class="skill-column">
+            <h3>Databases &amp; DevOps</h3>
+            <ul>
+              <li>MySQL, PostgreSQL, SQL&nbsp;Server</li>
+              <li>Git &amp; GitHub</li>
+              <li>Docker, Docker&nbsp;Compose, Kubernetes (MLOps)</li>
+              <li>MLflow, FastAPI, REST&nbsp;API</li>
+              <li>Arduino Cloud &amp; IoT APIs</li>
+            </ul>
+          </div>
+          <div class="skill-column">
+            <h3>Other tools</h3>
+            <ul>
+              <li>Visual Studio Code, IntelliJ IDEA, NetBeans, Zinjai</li>
+              <li>Android Studio, Jupyter Notebook, DBeaver</li>
+              <li>LaTeX, Octave, Breakpoint</li>
+              <li>XAMPP, Postman</li>
+            </ul>
+          </div>
+        </div>
+        <div class="aptitudes">
+          <h3>Aptitudes &amp; Languages</h3>
+          <ul>
+            <li>Creativity and lateral thinking</li>
+            <li>Planning, organisation and effective communication</li>
+            <li>Responsibility, punctuality and commitment</li>
+            <li>Adaptability to new tasks and environments</li>
+            <li>Experience in installing and maintaining computer systems and networks</li>
+            <li>Knowledge of hardware and software for devices</li>
+            <li>Public speaking and teaching</li>
+            <li>Languages: native Spanish, English B2</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h3>Information</h3>
+            <!-- Update contact phone number -->
+            <p><strong>Phone:</strong> <a href="tel:+543497412897">+54 3497 412 897</a></p>
+            <p><strong>Email:</strong> <a href="mailto:frugonizavalaignacio@gmail.com">frugonizavalaignacio@gmail.com</a></p>
+            <p><strong>Location:</strong> Santa Fe, Argentina</p>
+          </div>
+          <div class="contact-form">
+            <h3>Send me a message</h3>
+            <form id="contactForm">
+              <input type="text" id="name" placeholder="Your name" required>
+              <input type="email" id="email" placeholder="Your email" required>
+              <textarea id="message" placeholder="Your message" rows="5" required></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ignacio Frugoni Zavala. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="game_of_life.js"></script>
+</body>
+</html>
