@@ -5,6 +5,57 @@
 */
 
 document.addEventListener('DOMContentLoaded', () => {
+  const rootElement = document.documentElement;
+  const htmlLang = rootElement.lang || 'en';
+
+  // Manage theme toggle (light/dark)
+  const themeToggle = document.getElementById('themeToggle');
+  if (themeToggle) {
+    const labelSpan = themeToggle.querySelector('.theme-label');
+    const iconSpan = themeToggle.querySelector('.theme-icon');
+    const texts = htmlLang.startsWith('es')
+      ? { light: 'Claro', dark: 'Oscuro' }
+      : { light: 'Light', dark: 'Dark' };
+
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const savedTheme = localStorage.getItem('ignacio-theme');
+    let isDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+
+    const applyTheme = (dark) => {
+      if (dark) {
+        rootElement.setAttribute('data-theme', 'dark');
+      } else {
+        rootElement.removeAttribute('data-theme');
+      }
+      if (labelSpan) {
+        labelSpan.textContent = dark ? texts.dark : texts.light;
+      }
+      if (iconSpan) {
+        iconSpan.textContent = dark ? '🌙' : '☀️';
+      }
+      themeToggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
+    };
+
+    applyTheme(isDark);
+
+    themeToggle.addEventListener('click', () => {
+      const currentlyDark = rootElement.getAttribute('data-theme') === 'dark';
+      const nextDark = !currentlyDark;
+      applyTheme(nextDark);
+      localStorage.setItem('ignacio-theme', nextDark ? 'dark' : 'light');
+    });
+
+    if (window.matchMedia) {
+      const mq = window.matchMedia('(prefers-color-scheme: dark)');
+      mq.addEventListener('change', (event) => {
+        const stored = localStorage.getItem('ignacio-theme');
+        if (!stored) {
+          applyTheme(event.matches);
+        }
+      });
+    }
+  }
+
   // Cambiar el año en el footer dinámicamente
   const yearSpan = document.getElementById('year');
   if (yearSpan) {
@@ -63,6 +114,26 @@ document.addEventListener('DOMContentLoaded', () => {
   const cleanSelectors = document.querySelectorAll('p, li, .timeline-content');
   cleanSelectors.forEach(el => {
     el.innerHTML = el.innerHTML.replace(/【[^】]+】/g, '');
+  });
+
+  // Mini skill quiz interaction
+  const quizzes = document.querySelectorAll('.skill-quiz');
+  quizzes.forEach(quiz => {
+    const result = quiz.querySelector('.quiz-result');
+    const chips = quiz.querySelectorAll('.quiz-chip');
+    if (!result || chips.length === 0) return;
+    const defaultMessage = result.textContent;
+
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        chips.forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        const message = chip.dataset.message || chip.dataset.answer || defaultMessage;
+        if (result) {
+          result.textContent = message;
+        }
+      });
+    });
   });
 
   // Envío de correo desde el formulario de contacto

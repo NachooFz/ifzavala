@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ignacio Frugoni Zavala – Portfolio</title>
   <!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,16 +22,23 @@
         <li><a href="#contact">Contact</a></li>
         <li class="lang-switch"><a href="index_es.html" title="Ver en Español">EN</a></li>
       </ul>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark mode">
+        <span class="theme-icon" aria-hidden="true">☀️</span>
+        <span class="theme-label">Light</span>
+      </button>
     </div>
   </nav>
 
   <!-- Hero section -->
   <header class="hero">
-    <div class="hero-overlay"></div>
     <div class="hero-content container">
-      <h1>Ignacio&nbsp;Frugoni&nbsp;Zavala</h1>
-      <p class="subtitle">Full&nbsp;Stack&nbsp;Developer · Data&nbsp;Scientist · AI&nbsp;Engineer</p>
-      <a href="#about" class="cta-button">Discover more</a>
+      <p class="hero-eyebrow">IGNACIO FRUGONI ZAVALA</p>
+      <h1 class="hero-title">I design thoughtful software for humans and data.</h1>
+      <p class="hero-lead">Full Stack Developer • Data Scientist • AI Engineer</p>
+      <div class="hero-actions">
+        <a href="#about" class="cta-button">Discover more</a>
+        <a href="#projects" class="cta-secondary">See selected work</a>
+      </div>
     </div>
   </header>
 
@@ -46,10 +53,13 @@
           </div>
           <div class="about-info">
             <p>
-              I am a software developer with experience in artificial intelligence and data science. My roles have ranged from developing desktop applications to data analysis and microcontroller programming. I am known for my creativity and my ability to think outside the box when solving complex problems. I also possess strong organisational, planning and communication skills developed while working in diverse teams.
+              I am a software developer with experience in artificial intelligence and data science. My roles have ranged from developing desktop applications to data analysis and microcontroller programming.
             </p>
             <p>
-              I adapt quickly to new environments and tasks. I am currently studying Artificial Intelligence Engineering at the National University of the Littoral (UNL‑FICH) and expanding my knowledge through an MLOps bootcamp on Udemy. In addition to my technical interests, I enjoy teaching and learning from others.
+              I am known for my creativity and my ability to think outside the box when solving complex problems. I also possess strong organisational, planning and communication skills developed while working in diverse teams.
+            </p>
+            <p>
+              I adapt quickly to new environments and tasks. I am currently studying Artificial Intelligence Engineering at the National University of the Littoral (UNL‑FICH) while expanding my knowledge through an MLOps bootcamp on Udemy. Beyond the code, I enjoy teaching, mentoring and learning from others.
             </p>
           </div>
         </div>
@@ -389,6 +399,17 @@
             </ul>
           </div>
         </div>
+        <div class="skill-quiz" aria-live="polite">
+          <h3>Mini skill quiz</h3>
+          <p>What do you need most in your next project?</p>
+          <div class="quiz-options">
+            <button type="button" class="quiz-chip" data-answer="Full-stack architecture" data-message="I'll map the journey from idea to production with clean architecture, CI/CD and resilient deployments.">Robust full-stack architecture</button>
+            <button type="button" class="quiz-chip" data-answer="Data storytelling" data-message="We'll turn messy datasets into dashboards and narratives that spark decisions.">Insightful data storytelling</button>
+            <button type="button" class="quiz-chip" data-answer="Intelligent automation" data-message="I'll prototype intelligent agents and automations that save hours of manual work.">Intelligent automation</button>
+          </div>
+          <p class="quiz-result" id="quizResult">Pick an option to see how I can help.</p>
+        </div>
+
         <div class="aptitudes">
           <h3>Aptitudes &amp; Languages</h3>
           <ul>

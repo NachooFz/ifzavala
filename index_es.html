@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ignacio Frugoni Zavala – Portfolio</title>
   <!-- Google fonts for a modern, tech‑inspired look -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- Base stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -23,16 +23,23 @@
         <li><a href="#contact">Contacto</a></li>
         <li class="lang-switch"><a href="index.html" title="View in English">ES</a></li>
       </ul>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar entre modo claro y oscuro">
+        <span class="theme-icon" aria-hidden="true">☀️</span>
+        <span class="theme-label">Claro</span>
+      </button>
     </div>
   </nav>
 
   <!-- Hero section -->
   <header class="hero">
-    <div class="hero-overlay"></div>
     <div class="hero-content container">
-      <h1>Ignacio&nbsp;Frugoni&nbsp;Zavala</h1>
-      <p class="subtitle">Desarrollador&nbsp;Full&nbsp;Stack&nbsp;· Científico&nbsp;de&nbsp;Datos&nbsp;· Ingeniero&nbsp;en&nbsp;IA</p>
-      <a href="#about" class="cta-button">Descubre más</a>
+      <p class="hero-eyebrow">IGNACIO FRUGONI ZAVALA</p>
+      <h1 class="hero-title">Creo software humano y datos que cuentan historias.</h1>
+      <p class="hero-lead">Desarrollador Full Stack • Científico de Datos • Ingeniero en IA</p>
+      <div class="hero-actions">
+        <a href="#about" class="cta-button">Descubre más</a>
+        <a href="#projects" class="cta-secondary">Ver proyectos</a>
+      </div>
     </div>
   </header>
 
@@ -47,9 +54,13 @@
           </div>
           <div class="about-info">
             <p>
-              Soy desarrollador de software con especialización en inteligencia artificial y ciencia de datos. Mi trayectoria abarca el desarrollo de aplicaciones de escritorio, desarrollo web fullstack, implementacion de RAG Aplications, Inteligencia artificial, la programación de microcontroladores, el análisis de grandes volúmenes de datos 
+              Soy desarrollador de software con especialización en inteligencia artificial y ciencia de datos. Mi trayectoria abarca el desarrollo de aplicaciones de escritorio, soluciones web full stack, implementaciones RAG, programación de microcontroladores y análisis de grandes volúmenes de datos.
+            </p>
             <p>
-              Tengo una fuerte vocación creativa y disfruto enfrentando problemas complejos mediante enfoques innovadores. Destaco por mi capacidad organizativa y de comunicación, cualidades que me han permitido integrarme y liderar equipos diversos. Me adapto con rapidez a nuevas tecnologías y entornos, y actualmente combino mis estudios de Ingeniería en Inteligencia Artificial con un bootcamp de MLOps para perfeccionar prácticas de despliegue y monitorización de modelos.
+              Disfruto enfrentar problemas complejos mediante enfoques innovadores y creativos. Destaco por mi capacidad organizativa y de comunicación, cualidades que me han permitido integrarme y liderar equipos diversos.
+            </p>
+            <p>
+              Me adapto con rapidez a nuevas tecnologías y entornos. Actualmente combino mis estudios de Ingeniería en Inteligencia Artificial con un bootcamp de MLOps para perfeccionar prácticas de despliegue y monitorización de modelos. Más allá del código, disfruto enseñar, mentorear y aprender de los demás.
             </p>
           </div>
         </div>
@@ -390,17 +401,28 @@
             </ul>
           </div>
         </div>
+        <div class="skill-quiz" aria-live="polite">
+          <h3>Mini quiz de habilidades</h3>
+          <p>¿Qué necesita más tu próximo proyecto?</p>
+          <div class="quiz-options">
+            <button type="button" class="quiz-chip" data-answer="Arquitecturas full stack" data-message="Puedo guiar el recorrido de la idea a producción con arquitectura limpia, CI/CD y despliegues resilientes.">Arquitectura full stack robusta</button>
+            <button type="button" class="quiz-chip" data-answer="Historias con datos" data-message="Convertimos datos desordenados en tableros y relatos que impulsan decisiones.">Relatos con datos accionables</button>
+            <button type="button" class="quiz-chip" data-answer="Automatización inteligente" data-message="Prototipo agentes inteligentes y automatizaciones que ahorran horas de trabajo manual.">Automatización inteligente</button>
+          </div>
+          <p class="quiz-result" id="quizResult">Elige una opción para ver cómo puedo ayudarte.</p>
+        </div>
+
         <div class="aptitudes">
           <h3>Aptitudes &amp; Idiomas</h3>
           <ul>
-            <li>Creatividad y pensamiento lateral【747284766966841†screenshot】</li>
-            <li>Planificación, organización y comunicación efectiva【747284766966841†screenshot】</li>
-            <li>Responsabilidad, puntualidad y compromiso【93843279220151†screenshot】</li>
-            <li>Adaptabilidad a nuevas tareas y entornos【93843279220151†screenshot】</li>
-            <li>Experiencia en instalación y mantenimiento de sistemas informáticos y redes【410994484317424†screenshot】</li>
-            <li>Conocimientos de hardware y software de dispositivos【410994484317424†screenshot】</li>
-            <li>Presentaciones en público y docencia【410994484317424†screenshot】</li>
-            <li>Idiomas: Español nativo, Inglés nivel B2【189923868103679†screenshot】</li>
+            <li>Creatividad y pensamiento lateral</li>
+            <li>Planificación, organización y comunicación efectiva</li>
+            <li>Responsabilidad, puntualidad y compromiso</li>
+            <li>Adaptabilidad a nuevas tareas y entornos</li>
+            <li>Experiencia en instalación y mantenimiento de sistemas informáticos y redes</li>
+            <li>Conocimientos de hardware y software de dispositivos</li>
+            <li>Presentaciones en público y docencia</li>
+            <li>Idiomas: Español nativo, Inglés nivel B2</li>
           </ul>
         </div>
       </div>
